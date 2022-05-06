@@ -30,3 +30,12 @@
 ## Fonte:
 
 - Poppins(Google Fonts);
+
+##Sites de Apoio
+- CSS BUTTONS;
+- UNSPLASH
+- COVERR
+- W3S
+- MDN
+- COOLORS
+- GOOGLE FONTS
