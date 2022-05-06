@@ -18,7 +18,7 @@
 - #E4572E;
 - #E32D2D;
 
-## Tecnologias qeu serão utilizadas:
+## Tecnologias que serão utilizadas:
 
 - HTML;
 - CSS;
@@ -26,3 +26,7 @@
 - JS;
 - Bootstrap;
 - Canvas;
+
+## Fonte:
+
+- Poppins(Google Fonts);
