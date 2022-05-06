@@ -18,9 +18,11 @@
 - #E4572E;
 - #E32D2D;
 
-## Tecnologias utilizadas:
+## Tecnologias qeu serão utilizadas:
 
 - HTML;
 - CSS;
 - SASS;
 - JS;
+- Bootstrap;
+- Canvas;
