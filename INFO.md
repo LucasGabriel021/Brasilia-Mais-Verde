@@ -6,6 +6,7 @@
 - Login;
 - Localização;
 - Sobre Nós;
+- DashBoard
 - Galeria(Opcional);
 
 ## Cores Prévias: 
