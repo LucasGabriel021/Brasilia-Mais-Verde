@@ -1,2 +1,4 @@
-# Brasilia-Mais-Verde
- Sistema desenvolvido para cadastrar hortas da população do Distrito Federal.
+## Projeto Interdisciplinar II
+
+Sistema de Cadastro de Hortas Comunitárias
+
