@@ -1,6 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
 /*RESET CSS*/
 * {
      padding: 0;
      box-sizing: border-box;
      margin: 0;
+}
+
+/*DEFINIÇÃO DE CORES*/
+:root {
+     --verde:#52AA5E;
+     --azul:#2BD9FE;
+     --lima:#A2D729;
+     --laranja:#E4572E;
+     --vermelho:#E32D2D;
+}
+
+/*CONFIGS GLOBAIS*/
+.container {
+     width: 1600px;
+     height: auto;
+}
+
+h1 {
+     font: 700 100px 'Poppins', sans-serif;
+     color: #fff;
+     line-height: 100px;
+}
+
+/*CONFIGS INDIVIDUAIS*/
+.navbar-header {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #fff;
+}
+
+#nav {
+     max-width: 100%;
+     width: 100%;
+     height: 70px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: #fff;
+}
+
+.logomarca a img {
+     width: 70px;
+     height: 70px;
+}
+
+.menu ul {
+     display: flex;
+     list-style: none;
+     align-items: center;
+     justify-content: center;
+     column-gap: 30px;
+}
+
+.menu ul a {
+     text-decoration: none;
+     font: normal 18px 'Poppins', sans-serif;
+     color: var(--verde);
+     position: relative;
+     z-index: 1;
+     padding: 10px;
+     border-radius: 15px;
+}
+
+.menu ul a::before {
+     content: '';
+     width: 0;
+     height: 5%;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     background-image: linear-gradient(to right, var(--lima) 0%, var(--verde) 100%);
+     transition: .5s ease;
+     display: block;
+     z-index: -1;
+     border-radius: 15px;
+}
+
+.menu ul a:hover::before {
+     width: 100%;
+}
+
+.banner-header {
+     background: url(../img/background-pcl.jpg) no-repeat center;
+     background-size: cover;
+     height: calc(80vh - 70px);
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.banner-header-area {
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     row-gap: 60px;
+}
+
+.banner-btn-sobre > a {
+     text-decoration: none;
+     padding: 15px 35px;
+     color: #000;
+     background-color: #fff;
+     font: normal 16px 'Poppins', sans-serif;
+}
+
+.banner-btn-sobre > a:hover {
+     color: #000;
+     background-color: #fff;
 }
