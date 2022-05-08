@@ -6,6 +6,7 @@
 - Login;
 - Localização;
 - Sobre Nós;
+- DashBoard
 - Galeria(Opcional);
 
 ## Cores Prévias: 
@@ -30,3 +31,12 @@
 ## Fonte:
 
 - Poppins(Google Fonts);
+
+##Sites de Apoio
+- CSS BUTTONS;
+- UNSPLASH
+- COVERR
+- W3S
+- MDN
+- COOLORS
+- GOOGLE FONTS
