@@ -1,2 +1,3 @@
 // Efeito das palavras Parallax
-let rellax = new Rellax('.banner-header-area');
+let rellax = new Rellax('.parallax');
+
