@@ -301,7 +301,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .login-titulo h4 {
-     font: 100 40px 'Poppins', sans-serif;
+     font: normal 40px 'Poppins', sans-serif;
      color: #fff;
 }
 
