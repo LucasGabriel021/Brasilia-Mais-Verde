@@ -28,7 +28,7 @@ h1 {
 }
 
 body::-webkit-scrollbar {
-     width: 5px;
+     width: 7px;
 }
 
 body::-webkit-scrollbar-track {
@@ -336,4 +336,133 @@ body::-webkit-scrollbar-thumb {
 .login-btn a:hover {
      color: #fff;
      background-color: #000;
+}
+
+/*SECTION MINI GALERIA*/
+#section-mini-galeria {
+     padding: 60px 0px;
+     display: flex;
+     justify-content: center;
+}
+
+.section-mini-galeria--area {
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     row-gap: 30px;
+}
+
+.titulo-mini-galeria h3 {
+     font: 700 36px 'Poppins', sans-serif;
+     color: var(--roxo);
+     padding: 0px 10px 10px 10px;
+}
+
+.titulo-mini-galeria hr {
+     width: 70%;
+     background-color: var(--roxo);
+     height: 3px;
+     border-radius: 5px;
+     margin: auto;
+}
+
+.imagens-mini-galeria {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     width: 100%;
+     gap: 30px;
+}
+
+.coluna-1 {
+     height: 820px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     row-gap: 30px;
+}
+
+.img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7 {
+     flex: 1;
+     background-color: #391463;
+     background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+}
+
+.coluna-2 {
+     height: 820px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     row-gap: 30px;
+}
+
+.coluna-3 {
+     height: 820px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     row-gap: 30px;
+}
+
+.img-1 {
+     background: url(../img/img-mini-galeria-1.jfif) no-repeat center;
+}
+
+.img-2 {
+     background: url(../img/img-mini-galeria-2.jpg) no-repeat center;
+}
+
+.img-3 {
+     background: url(../img/img-mini-galeria-3.jpg) no-repeat center;
+}
+
+.img-4 {
+     background: url(../img/img-mini-galeria-4.jpg) no-repeat center;
+}
+
+.img-5 {
+     background: url(../img/img-mini-galeria-5.jpg) no-repeat center;
+}
+
+.img-6 {
+     background: url(../img/img-mini-galeria-6.jpg) no-repeat center;
+}
+
+.img-7 {
+     background: url(../img/img-mini-galeria-7.jpg) no-repeat center;
+}
+
+.btn-mini-galeria {
+     height: 55px;
+     display: flex;
+     align-items: center;
+}
+
+.btn-mini-galeria a {
+     margin-top: 30px;
+     text-decoration: none;
+     padding: 15px 35px;
+     color: #000;
+     background-color: #fff;
+     border: 1px solid #000;
+     font: normal 16px 'Poppins', sans-serif;
+     position: relative;
+     z-index: 1;
+     transition: .5s ease;
+}
+
+.btn-mini-galeria a:hover {
+     color: #fff;
+     background-color: #000;
+}
+
+/*CONFIG FOOTER*/
+#footer {
+     padding: 60px 0px;
+     display: flex;
+     justify-content: center;
+     background-image: linear-gradient(to right, var(--lima) 0%, var(--verde) 100%);
 }
