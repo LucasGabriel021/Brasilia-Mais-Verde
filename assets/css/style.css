@@ -28,7 +28,7 @@ h1 {
 }
 
 body::-webkit-scrollbar {
-     width: 7px;
+     width: 11px;
 }
 
 body::-webkit-scrollbar-track {
@@ -465,4 +465,60 @@ body::-webkit-scrollbar-thumb {
      display: flex;
      justify-content: center;
      background-image: linear-gradient(to right, var(--lima) 0%, var(--verde) 100%);
+}
+
+.footer--area {
+     display: flex;
+     column-gap: 30px;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.footer-info, .footer-logo, .footer-newsletter {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     row-gap: 30px;
+}
+
+.titulo-info-footer h4 {
+     font: 700 36px 'Poppins', sans-serif;
+     color: var(--roxo);
+}
+
+.desc-info-footer p {
+     font: normal 18px 'Poppins', sans-serif;
+     color: #fff;
+}
+
+.footer-logo img {
+     width: 90%;
+     height: 90%;
+}
+
+.titulo-footer-newsletter h4 {
+     font: 700 36px 'Poppins', sans-serif;
+     color: var(--roxo);
+}
+
+.desc-footer-newsletter p {
+     font: normal 18px 'Poppins', sans-serif;
+     color: #fff;
+}
+
+#btn-modal {
+     padding: 15px 35px;
+     color: #000;
+     background-color: #fff;
+     border: none;
+     font: normal 16px 'Poppins', sans-serif;
+     position: relative;
+     z-index: 1;
+     transition: .5s ease;
+     cursor: pointer;
+}
+
+#btn-modal:hover {
+     color: #fff;
+     background-color: #000;
 }
