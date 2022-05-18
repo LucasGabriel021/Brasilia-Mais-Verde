@@ -11,13 +11,12 @@
 
 ## Cores Prévias: 
 
-- #000;
-- #FFF;
 - #52AA5E;
-- #2BD9FE;
 - #A2D729;
-- #E4572E;
+- #2BD9FE;
 - #E32D2D;
+- #391463;
+- #f9d618;
 
 ## Tecnologias que serão utilizadas:
 
@@ -27,6 +26,7 @@
 - JS;
 - Bootstrap;
 - Canvas;
+- JQuery
 
 ## Fonte:
 

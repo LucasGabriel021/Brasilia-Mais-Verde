@@ -13,6 +13,7 @@
      --azul:#2BD9FE;
      --vermelho:#E32D2D;
      --roxo: #391463;
+     --amarelo: #f9d618;
 }
 
 /*CONFIGS GLOBAIS*/
@@ -127,9 +128,9 @@ body::-webkit-scrollbar-thumb {
 .banner-btn-sobre a {
      text-decoration: none;
      padding: 15px 35px;
-     color: #000;
+     color: var(--verde);
      background-color: #fff;
-     font: normal 16px 'Poppins', sans-serif;
+     font: normal 18px 'Poppins', sans-serif;
      position: relative;
      z-index: 1;
      transition: .5s ease;
@@ -137,7 +138,7 @@ body::-webkit-scrollbar-thumb {
 
 .banner-btn-sobre a:hover {
      color: #fff;
-     background-color: #000;
+     background-color: var(--verde);
 }
 
 
@@ -202,10 +203,10 @@ body::-webkit-scrollbar-thumb {
 .description-botao a {
      text-decoration: none;
      padding: 15px 35px;
-     color: #000;
+     color: var(--verde);
      background-color: #fff;
-     border: 1px solid #000;
-     font: normal 16px 'Poppins', sans-serif;
+     border: 1px solid var(--verde);
+     font: normal 18px 'Poppins', sans-serif;
      position: relative;
      z-index: 1;
      transition: .5s ease;
@@ -213,7 +214,7 @@ body::-webkit-scrollbar-thumb {
 
 .description-botao a:hover {
      color: #fff;
-     background-color: #000;
+     background-color: var(--verde);
 }
 
 /*CONFIG SECTION INFO*/
@@ -306,8 +307,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .login-subtitulo h3 {
-     font: 700 50px 'Poppins', sans-serif;
-     color: var(--roxo);
+     font: 700 60px 'Poppins', sans-serif;
+     color: var(--amarelo);
 }
 
 .login-desc p {
@@ -324,9 +325,9 @@ body::-webkit-scrollbar-thumb {
 .login-btn a {
      text-decoration: none;
      padding: 15px 35px;
-     color: #000;
+     color: var(--verde);
      background-color: #fff;
-     border: 1px solid #000;
+     border: 1px solid var(--verde);
      font: normal 16px 'Poppins', sans-serif;
      position: relative;
      z-index: 1;
@@ -335,7 +336,7 @@ body::-webkit-scrollbar-thumb {
 
 .login-btn a:hover {
      color: #fff;
-     background-color: #000;
+     background-color: var(--verde);
 }
 
 /*SECTION MINI GALERIA*/
@@ -445,10 +446,10 @@ body::-webkit-scrollbar-thumb {
      margin-top: 30px;
      text-decoration: none;
      padding: 15px 35px;
-     color: #000;
+     color: var(--verde);
      background-color: #fff;
-     border: 1px solid #000;
-     font: normal 16px 'Poppins', sans-serif;
+     border: 1px solid var(--verde);
+     font: normal 18px 'Poppins', sans-serif;
      position: relative;
      z-index: 1;
      transition: .5s ease;
@@ -456,7 +457,7 @@ body::-webkit-scrollbar-thumb {
 
 .btn-mini-galeria a:hover {
      color: #fff;
-     background-color: #000;
+     background-color: var(--verde);
 }
 
 /*CONFIG FOOTER*/
@@ -508,10 +509,10 @@ body::-webkit-scrollbar-thumb {
 
 #btn-modal {
      padding: 15px 35px;
-     color: #000;
+     color: var(--verde);
      background-color: #fff;
-     border: none;
-     font: normal 16px 'Poppins', sans-serif;
+     border: 1px solid var(--verde);
+     font: normal 18px 'Poppins', sans-serif;
      position: relative;
      z-index: 1;
      transition: .5s ease;
@@ -520,5 +521,5 @@ body::-webkit-scrollbar-thumb {
 
 #btn-modal:hover {
      color: #fff;
-     background-color: #000;
+     background-color: var(--verde);
 }
