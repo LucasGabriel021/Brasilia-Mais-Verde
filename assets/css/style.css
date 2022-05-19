@@ -41,6 +41,10 @@ body::-webkit-scrollbar-thumb {
      border-radius: 5px;
 }
 
+html{
+     scroll-behavior: smooth;
+}
+
 
 /*CONFIGS INDIVIDUAIS*/
 .navbar-header {
@@ -130,6 +134,7 @@ body::-webkit-scrollbar-thumb {
      padding: 15px 35px;
      color: var(--verde);
      background-color: #fff;
+     border: 1px solid var(--verde);
      font: normal 18px 'Poppins', sans-serif;
      position: relative;
      z-index: 1;
@@ -187,6 +192,7 @@ body::-webkit-scrollbar-thumb {
 
 .description-titulo h2 {
      font: 700 38px 'Poppins', sans-serif;
+     color: var(--roxo);
 }
 
 .description-texto p {
@@ -302,7 +308,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .login-titulo h4 {
-     font: normal 40px 'Poppins', sans-serif;
+     font: normal 45px 'Poppins', sans-serif;
      color: #fff;
 }
 
@@ -505,21 +511,4 @@ body::-webkit-scrollbar-thumb {
 .desc-footer-newsletter p {
      font: normal 18px 'Poppins', sans-serif;
      color: #fff;
-}
-
-#btn-modal {
-     padding: 15px 35px;
-     color: var(--verde);
-     background-color: #fff;
-     border: 1px solid var(--verde);
-     font: normal 18px 'Poppins', sans-serif;
-     position: relative;
-     z-index: 1;
-     transition: .5s ease;
-     cursor: pointer;
-}
-
-#btn-modal:hover {
-     color: #fff;
-     background-color: var(--verde);
 }
