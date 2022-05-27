@@ -105,6 +105,32 @@ html{
      width: 100%;
 }
 
+.btn-hamburguer {
+     cursor: pointer;
+}
+
+.btn-hamburguer .line {
+     display: none;
+     width: 30px;
+     height: 3px;
+     background-color: var(--verde);
+     border-radius: 5px;
+     margin-block: 5px;
+     transition: transform .5s, opacity .25s;
+}
+
+.btn-hamburguer.active .line:nth-child(1) {
+     transform: translateY(13px) rotate(45deg);
+}
+
+.btn-hamburguer.active .line:nth-child(2) {
+     opacity: 0;
+}
+
+.btn-hamburguer.active .line:nth-child(3) {
+     transform: translateY(-13px) rotate(-45deg);
+}
+
 .banner-header {
      background: url(../img/background-pcl.jpg) no-repeat center;
      background-size: cover;
@@ -415,31 +441,31 @@ html{
 }
 
 .img-1 {
-     background: url(../img/img-mini-galeria-1.jfif) no-repeat center;
+     background-color: #391463;
 }
 
 .img-2 {
-     background: url(../img/img-mini-galeria-2.jpg) no-repeat center;
+     background-color: #391463;
 }
 
 .img-3 {
-     background: url(../img/img-mini-galeria-3.jpg) no-repeat center;
+     background-color: #391463;
 }
 
 .img-4 {
-     background: url(../img/img-mini-galeria-4.jpg) no-repeat center;
+     background-color: #391463;
 }
 
 .img-5 {
-     background: url(../img/img-mini-galeria-5.jpg) no-repeat center;
+     background-color: #391463;
 }
 
 .img-6 {
-     background: url(../img/img-mini-galeria-6.jpg) no-repeat center;
+     background-color: #391463;
 }
 
 .img-7 {
-     background: url(../img/img-mini-galeria-7.jpg) no-repeat center;
+     background-color: #391463;
 }
 
 .btn-mini-galeria {
@@ -511,4 +537,286 @@ html{
 .desc-footer-newsletter p {
      font: normal 18px 'Poppins', sans-serif;
      color: #fff;
+}
+
+@media(min-width:769px) and (max-width:1280px) {
+     /*CONFIGS GLOBAIS*/
+     .container {
+          width: 1150px;
+          height: auto;
+     } 
+
+     /*CONFIGS INDIVIDUAIS*/
+     .banner-header {
+          height: calc(80vh - 70px);
+     }
+     
+     /*CONFIGS MAIN SECTIONS*/
+     
+     /*CONFIG SECTION DESCRIPTION*/
+     .section-description--area {
+          grid-template-columns: 1fr 1fr;
+     }
+     
+     .description-titulo h2 {
+          font: 700 35px 'Poppins', sans-serif;
+     }
+
+
+     /*CONFIG SECTION LOGIN*/
+     #section-login {
+          height: calc(90vh - 70px);
+     }
+     
+     .section-login--area {
+          row-gap: 20px;
+     }
+     
+     .login-titulo h4 {
+          font: normal 30px 'Poppins', sans-serif;
+     }
+     
+     .login-subtitulo h3 {
+          font: 700 40px 'Poppins', sans-serif;
+     }
+     
+     .login-desc p {
+          font: normal 20px 'Poppins', sans-serif;
+     }
+
+     
+     /*SECTION MINI GALERIA*/
+     .section-mini-galeria--area {
+          row-gap: 20px;
+     }
+     
+     .titulo-mini-galeria h3 {
+          font: 700 40px 'Poppins', sans-serif;
+     }
+     
+     .titulo-mini-galeria hr {
+          height: 2px;
+     }
+     
+     .imagens-mini-galeria {
+          gap: 20px;
+     }
+     
+     .coluna-1 {
+          row-gap: 20px;
+     }
+     
+     .coluna-2 {
+          row-gap: 20px;
+     }
+     
+     .coluna-3 {
+          row-gap: 20px;
+     }
+
+     
+     /*CONFIG FOOTER*/
+     .footer--area {
+          display: flex;
+          column-gap: 30px;
+          justify-content: space-between;
+          align-items: center;
+     }
+     
+     .footer-info, .footer-logo, .footer-newsletter {
+          row-gap: 20px;
+     }
+     
+     .titulo-info-footer h4 {
+          font: 700 30px 'Poppins', sans-serif;
+     }
+     
+     .titulo-footer-newsletter h4 {
+          font: 700 30px 'Poppins', sans-serif;
+     }
+}
+
+@media(min-width:401px) and (max-width:768px) {
+     /*CONFIGS GLOBAIS*/
+     .container {
+          width: 668px;
+     } 
+
+     /*CONFIGS INDIVIDUAIS*/
+     .navbar-header {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #fff;
+     }
+
+     #nav {
+          max-width: 100%;
+          height: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: #fff;
+     }
+
+     .logomarca a img {
+          width: 70px;
+          height: 70px;
+     }
+
+     .menu ul {
+          display: flex;
+          list-style: none;
+          align-items: center;
+          justify-content: center;
+          column-gap: 30px;
+     }
+
+     .menu ul a {
+          text-decoration: none;
+          font: normal 18px 'Poppins', sans-serif;
+          color: var(--verde);
+          position: relative;
+          z-index: 1;
+          padding: 10px;
+          border-radius: 15px;
+     }
+
+     .menu ul a::before {
+          content: '';
+          width: 0;
+          height: 5%;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(to right, var(--lima) 0%, var(--verde) 100%);
+          transition: .5s ease;
+          display: block;
+          z-index: -1;
+          border-radius: 15px;
+     }
+
+     .menu ul a:hover::before {
+          width: 100%;
+     }
+
+     .btn-hamburguer {
+          cursor: pointer;
+     }
+
+     .btn-hamburguer .line {
+          display: block;
+          width: 30px;
+          height: 3px;
+          background-color: var(--verde);
+          border-radius: 5px;
+          margin-block: 5px;
+          transition: transform .5s, opacity .25s;
+          position: relative;
+          z-index: 99;
+     }
+
+     .btn-hamburguer.active .line:nth-child(1) {
+          transform: translateY(13px) rotate(45deg);
+          position: relative;
+     }
+
+     .btn-hamburguer.active .line:nth-child(2) {
+          opacity: 0;
+     }
+
+     .btn-hamburguer.active .line:nth-child(3) {
+          transform: translateY(-13px) rotate(-45deg);
+          top: 8px;
+     }
+
+     /*CONFIGS INDIVIDUAIS*/
+     .banner-header {
+          height: calc(80vh - 70px);
+     }
+     
+     /*CONFIGS MAIN SECTIONS*/
+     
+     /*CONFIG SECTION DESCRIPTION*/
+     .section-description--area {
+          grid-template-columns: 1fr 1fr;
+     }
+     
+     .description-titulo h2 {
+          font: 700 35px 'Poppins', sans-serif;
+     }
+
+
+     /*CONFIG SECTION LOGIN*/
+     #section-login {
+          height: calc(90vh - 70px);
+     }
+     
+     .section-login--area {
+          row-gap: 20px;
+     }
+     
+     .login-titulo h4 {
+          font: normal 30px 'Poppins', sans-serif;
+     }
+     
+     .login-subtitulo h3 {
+          font: 700 40px 'Poppins', sans-serif;
+     }
+     
+     .login-desc p {
+          font: normal 20px 'Poppins', sans-serif;
+     }
+
+     
+     /*SECTION MINI GALERIA*/
+     .section-mini-galeria--area {
+          row-gap: 20px;
+     }
+     
+     .titulo-mini-galeria h3 {
+          font: 700 40px 'Poppins', sans-serif;
+     }
+     
+     .titulo-mini-galeria hr {
+          height: 2px;
+     }
+     
+     .imagens-mini-galeria {
+          gap: 20px;
+     }
+     
+     .coluna-1 {
+          row-gap: 20px;
+     }
+     
+     .coluna-2 {
+          row-gap: 20px;
+     }
+     
+     .coluna-3 {
+          row-gap: 20px;
+     }
+
+     
+     /*CONFIG FOOTER*/
+     .footer--area {
+          display: flex;
+          column-gap: 30px;
+          justify-content: space-between;
+          align-items: center;
+     }
+     
+     .footer-info, .footer-logo, .footer-newsletter {
+          row-gap: 20px;
+     }
+     
+     .titulo-info-footer h4 {
+          font: 700 30px 'Poppins', sans-serif;
+     }
+     
+     .titulo-footer-newsletter h4 {
+          font: 700 30px 'Poppins', sans-serif;
+     }
 }
