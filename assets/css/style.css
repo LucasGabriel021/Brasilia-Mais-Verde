@@ -22,10 +22,15 @@
      height: auto;
 }
 
+.show {
+     left: 0 !important;
+}
+
 h1 {
      font: 700 100px 'Poppins', sans-serif;
      color: #fff;
      line-height: 100px;
+     display: inline;
 }
 
 body::-webkit-scrollbar {
@@ -107,10 +112,11 @@ html{
 
 .btn-hamburguer {
      cursor: pointer;
+     display: none;
 }
 
 .btn-hamburguer .line {
-     display: none;
+     display: block;
      width: 30px;
      height: 3px;
      background-color: var(--verde);
@@ -507,6 +513,17 @@ html{
      align-items: center;
 }
 
+.direitos-autorais {
+     margin-top: 30px;
+     width: 100%;
+     display: flex;
+}
+
+.direitos-autorais span {
+     font: 700 14px 'Poppins', sans-serif;
+     color: var(--roxo);
+}
+
 .footer-info, .footer-logo, .footer-newsletter {
      flex: 1;
      display: flex;
@@ -642,181 +659,215 @@ html{
           width: 668px;
      } 
 
+     h1 {
+          font: 700 70px 'Poppins', sans-serif;
+          line-height: 70px;
+     }
+
      /*CONFIGS INDIVIDUAIS*/
-     .navbar-header {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+     .menu {
+          position: absolute;
+          z-index: 99;
+          top: 0;
+          left: -350px;
+          margin-top: 70px;
+          width: 40%;
           background-color: #fff;
-     }
-
-     #nav {
-          max-width: 100%;
-          height: 70px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          background-color: #fff;
-     }
-
-     .logomarca a img {
-          width: 70px;
-          height: 70px;
+          height: calc(80vh - 70px);
+          transition: all ease .3s;
      }
 
      .menu ul {
-          display: flex;
-          list-style: none;
-          align-items: center;
-          justify-content: center;
-          column-gap: 30px;
-     }
-
-     .menu ul a {
-          text-decoration: none;
-          font: normal 18px 'Poppins', sans-serif;
-          color: var(--verde);
-          position: relative;
-          z-index: 1;
-          padding: 10px;
-          border-radius: 15px;
-     }
-
-     .menu ul a::before {
-          content: '';
-          width: 0;
-          height: 5%;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          background-image: linear-gradient(to right, var(--lima) 0%, var(--verde) 100%);
-          transition: .5s ease;
-          display: block;
-          z-index: -1;
-          border-radius: 15px;
-     }
-
-     .menu ul a:hover::before {
           width: 100%;
+          flex-direction: column;
+          background-color: #fff;
+          display: inline-flex;
+          justify-content: flex-start;
+          row-gap: 20px;
+     }
+
+     .banner-btn-sobre a {
+          font: normal 16px 'Poppins', sans-serif;
      }
 
      .btn-hamburguer {
-          cursor: pointer;
-     }
-
-     .btn-hamburguer .line {
           display: block;
-          width: 30px;
-          height: 3px;
-          background-color: var(--verde);
-          border-radius: 5px;
-          margin-block: 5px;
-          transition: transform .5s, opacity .25s;
-          position: relative;
-          z-index: 99;
-     }
-
-     .btn-hamburguer.active .line:nth-child(1) {
-          transform: translateY(13px) rotate(45deg);
-          position: relative;
-     }
-
-     .btn-hamburguer.active .line:nth-child(2) {
-          opacity: 0;
-     }
-
-     .btn-hamburguer.active .line:nth-child(3) {
-          transform: translateY(-13px) rotate(-45deg);
-          top: 8px;
      }
 
      /*CONFIGS INDIVIDUAIS*/
-     .banner-header {
-          height: calc(80vh - 70px);
+     .banner-header-area {
+          row-gap: 30px;
      }
      
+     .banner-btn-sobre a {
+          padding: 13px 30px;
+          font: normal 16px 'Poppins', sans-serif;
+     }
+
+
      /*CONFIGS MAIN SECTIONS*/
-     
+
      /*CONFIG SECTION DESCRIPTION*/
      .section-description--area {
-          grid-template-columns: 1fr 1fr;
-     }
-     
-     .description-titulo h2 {
-          font: 700 35px 'Poppins', sans-serif;
+          display: grid;
+          grid-template-columns: 1fr;
+          row-gap: 30px;
      }
 
+     .description--area1 {
+          display: none;
+     }
+
+     .description--area2 {
+          grid-column: 1 / 3;
+     }
+
+     .description--area3 {
+          grid-column: 1 / 3;
+     }
+
+     .description-titulo h2 {
+          font: 700 30px 'Poppins', sans-serif;
+     }
+
+     .description-texto p {
+          font: normal 16px 'Poppins', sans-serif;
+     }
+
+     .description-botao a {
+          padding: 13px 30px;
+          font: normal 16px 'Poppins', sans-serif;
+     }
+
+
+     /*CONFIG SECTION INFO*/
+     .info--area-titulo h3 {
+          font: 700 20px 'Poppins', sans-serif;
+     }
+
+     .info--area-org {
+          grid-template-columns: repeat(2, 1fr);
+          row-gap: 30px;
+     }
+
+     .info--area-box:nth-child(2) {
+          border-right: 1px solid var(--roxo);
+     }
+
+     .info-box-titulo h4 {
+          font: 700 18px 'Poppins', sans-serif;
+     }
+
+     .info-box-desc p {
+          font: normal 16px 'Poppins', sans-serif;
+     }
 
      /*CONFIG SECTION LOGIN*/
-     #section-login {
-          height: calc(90vh - 70px);
-     }
-     
      .section-login--area {
+          width: 100%;
+          align-items: center;
           row-gap: 20px;
      }
-     
+
      .login-titulo h4 {
           font: normal 30px 'Poppins', sans-serif;
      }
-     
+
      .login-subtitulo h3 {
           font: 700 40px 'Poppins', sans-serif;
      }
-     
+
      .login-desc p {
-          font: normal 20px 'Poppins', sans-serif;
+          font: normal 16px 'Poppins', sans-serif;
      }
 
-     
-     /*SECTION MINI GALERIA*/
-     .section-mini-galeria--area {
-          row-gap: 20px;
+     .login-btn a {
+          padding: 13px 30px;
+          font: normal 16px 'Poppins', sans-serif;
      }
-     
+
+     /*SECTION MINI GALERIA*/
      .titulo-mini-galeria h3 {
           font: 700 40px 'Poppins', sans-serif;
      }
-     
-     .titulo-mini-galeria hr {
-          height: 2px;
-     }
-     
+
      .imagens-mini-galeria {
+          grid-template-columns: repeat(2, 1fr);
           gap: 20px;
      }
-     
+
      .coluna-1 {
-          row-gap: 20px;
-     }
-     
-     .coluna-2 {
-          row-gap: 20px;
-     }
-     
-     .coluna-3 {
-          row-gap: 20px;
+          grid-column: 1 / 2;
      }
 
-     
+     .coluna-2 {
+          grid-column: 2 / 3;
+     }
+
+     .coluna-3 {
+          grid-row: 2 / 3;
+          grid-column: 1 / 3;
+     }
+
+     .btn-mini-galeria a {
+          padding: 13px 30px;
+          font: normal 16px 'Poppins', sans-serif;
+     }
+
      /*CONFIG FOOTER*/
      .footer--area {
-          display: flex;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
           column-gap: 30px;
           justify-content: space-between;
           align-items: center;
      }
-     
-     .footer-info, .footer-logo, .footer-newsletter {
-          row-gap: 20px;
+
+     .footer-info {
+          grid-row: 1 / 2;
+          grid-column: 1 / 2;
      }
-     
+
+     .footer-logo {
+          grid-row: 2 / 3;
+          grid-column: 1 / 3;
+     }
+
+     .footer-logo a {
+          text-align: center;
+     }
+
+     .footer-newsletter {
+          grid-row: 1 / 2;
+          grid-column: 2 / 3;
+     }
+
      .titulo-info-footer h4 {
           font: 700 30px 'Poppins', sans-serif;
      }
-     
+
+     .desc-info-footer p {
+          font: normal 16px 'Poppins', sans-serif;
+     }
+
+     .footer-logo img {
+          width: 70%;
+          height: 70%;
+     }
+
      .titulo-footer-newsletter h4 {
           font: 700 30px 'Poppins', sans-serif;
+     }
+
+     .desc-footer-newsletter p {
+          font: normal 16px 'Poppins', sans-serif;
+     }
+
+     .direitos-autorais {
+          justify-content: center;
+     }
+     
+     .direitos-autorais span {
+          font: 700 12px 'Poppins', sans-serif;
      }
 }
