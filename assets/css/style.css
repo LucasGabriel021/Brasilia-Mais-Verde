@@ -127,6 +127,8 @@ html{
 
 .btn-hamburguer.active .line:nth-child(1) {
      transform: translateY(13px) rotate(45deg);
+     position: relative;
+     bottom: 5px;
 }
 
 .btn-hamburguer.active .line:nth-child(2) {
@@ -135,6 +137,8 @@ html{
 
 .btn-hamburguer.active .line:nth-child(3) {
      transform: translateY(-13px) rotate(-45deg);
+     position: relative;
+     top: 2px;
 }
 
 .banner-header {
