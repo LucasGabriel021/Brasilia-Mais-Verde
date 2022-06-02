@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+/*DEFINIÇÃO DE CORES*/
+:root {
+     --verde:#52AA5E;
+     --lima:#A2D729;
+     --roxo: #391463;
+     --amarelo: #f9d618;
+     --transparencia:  rgba(255, 255, 255, 0.9);
+}

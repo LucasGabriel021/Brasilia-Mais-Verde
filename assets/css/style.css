@@ -10,10 +10,9 @@
 :root {
      --verde:#52AA5E;
      --lima:#A2D729;
-     --azul:#2BD9FE;
-     --vermelho:#E32D2D;
      --roxo: #391463;
      --amarelo: #f9d618;
+     --transparencia:  rgba(255, 255, 255, 0.9);
 }
 
 /*CONFIGS GLOBAIS*/
@@ -57,7 +56,10 @@ html{
      display: flex;
      justify-content: center;
      align-items: center;
-     background-color: #fff;
+     background-color: var(--transparencia);
+     position: fixed;
+     top: 0;
+     z-index: 99;
 }
 
 #nav {
@@ -66,7 +68,7 @@ html{
      display: flex;
      align-items: center;
      justify-content: space-between;
-     background-color: #fff;
+     
 }
 
 .logomarca a img {
