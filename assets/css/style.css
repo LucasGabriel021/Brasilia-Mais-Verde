@@ -408,7 +408,7 @@ html{
 .titulo-mini-galeria hr {
      width: 70%;
      background-color: var(--roxo);
-     height: 3px;
+     height: 10px;
      border-radius: 5px;
      margin: auto;
 }
