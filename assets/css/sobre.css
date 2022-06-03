@@ -63,7 +63,6 @@
 .integrantes--title span{
      font: 700 50px 'Poppins', sans-serif;
      color: var(--roxo);
-     display: inline;
 }
 
 .integrantes--title hr {
@@ -157,13 +156,21 @@
      color: #fff;
 }
 
-.integrantes-description {
+#fases-desenvolvimento {
      display: flex;
-     flex-direction: column;
-     row-gap: 20px;
+     justify-content: center;
+     padding: 70px 0px;
+     background: rgb(162,215,41);
+     background: linear-gradient(56deg, rgba(162,215,41,1) 0%, rgba(82,170,94,1) 82%);
 }
 
-.integrantes-description p {
-     font: normal 18px 'Poppins', sans-serif;
+.fases-desenvolvimento--area {
+     display: flex;
+     flex-direction: column;
+}
+
+.fases-desenvolvimento--title span {
+     font: 700 50px 'Poppins', sans-serif;
      color: var(--roxo);
 }
+

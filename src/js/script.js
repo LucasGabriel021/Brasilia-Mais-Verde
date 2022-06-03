@@ -44,12 +44,3 @@ function updateMargin() {
 }
 
 setInterval(goNext, 8000);
-
-
-
-
-
-
-
-
-
