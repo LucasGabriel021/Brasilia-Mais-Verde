@@ -12,7 +12,7 @@
      --lima:#A2D729;
      --roxo: #391463;
      --amarelo: #f9d618;
-     --transparencia:  rgba(255, 255, 255, 0.9);
+     --transparencia:  #ffffffe6;
 }
 
 /*CONFIGS GLOBAIS*/
@@ -73,10 +73,11 @@ html{
      display: flex;
      justify-content: center;
      align-items: center;
-     background-color: var(--transparencia);
+     background-color: #fff;
      position: fixed;
      top: 0;
      z-index: 99;
+     transition: .5s ease;
 }
 
 #nav {

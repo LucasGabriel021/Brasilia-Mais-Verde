@@ -30,9 +30,11 @@ btnSeta.addEventListener('click', () => {
 function decidirBotao() {
      if(window.scrollY == 0) {
           document.getElementById('btn-scroll').style.opacity = 0;
+          document.querySelector('.navbar-header').style.backgroundColor = "#ffffff";
      } 
      else {    
           document.getElementById('btn-scroll').style.opacity = 1;
+          document.querySelector('.navbar-header').style.backgroundColor = "#ffffffe6";
      }
 }
 window.addEventListener('scroll', decidirBotao);
