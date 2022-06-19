@@ -1,4 +1,4 @@
-// Botão toggle Hamburguer
+// ============================ Botão toggle Hamburguer
 const HAMBURGUER_MENU = document.querySelector('.btn-hamburguer');
 let listMenu = document.querySelector('.menu');
 
@@ -15,7 +15,30 @@ const MENU_ACTIVE = () => {
 HAMBURGUER_MENU.addEventListener('click', MENU_ACTIVE);
 
 
-// Slider Show
+// ============================ Botão Voltar
+let btnSeta = document.querySelector('#btn-scroll');
+
+btnSeta.addEventListener('click', () => {
+     window.scrollTo(
+          {
+               top: 0,
+               behavior: "smooth"
+          }
+     )
+});
+
+function decidirBotao() {
+     if(window.scrollY == 0) {
+          document.getElementById('btn-scroll').style.opacity = 0;
+     } 
+     else {    
+          document.getElementById('btn-scroll').style.opacity = 1;
+     }
+}
+window.addEventListener('scroll', decidirBotao);
+
+
+// ============================ Slider Show
 let totalSlides = document.querySelectorAll('.slider--item').length;
 let slideAtual = 0;
 
@@ -44,3 +67,8 @@ function updateMargin() {
 }
 
 setInterval(goNext, 8000);
+
+let teste = document.getElementById("teste").clientWidth;
+console.log(teste);
+
+

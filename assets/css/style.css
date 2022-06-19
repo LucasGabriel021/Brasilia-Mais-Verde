@@ -17,7 +17,7 @@
 
 /*CONFIGS GLOBAIS*/
 .container {
-     width: 1600px;
+     width: 1500px;
      height: auto;
 }
 
@@ -47,6 +47,23 @@ body::-webkit-scrollbar-thumb {
 
 html{
      scroll-behavior: smooth;
+}
+
+#btn-scroll {
+     position: fixed;
+     bottom: 0;
+     right: 0;
+     margin-bottom: 40px;
+     margin-right: 20px;
+     z-index: 99;
+     opacity: 0;
+     cursor: pointer;
+}
+
+#btn-scroll img {
+     width: 50px;
+     height: 50px;
+     transform: rotateZ(135deg);
 }
 
 
