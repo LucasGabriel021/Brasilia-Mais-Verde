@@ -46,18 +46,45 @@
                <div class="login-filtro--color">
                     <div class="container">
                          <div class="login-area">
-                              <div class="login-area--title">
-                                   <h2>Login</h2>
+                              <div class="form-modal">
+                                   <div class="form-modal--login">
+                                        <div class="login-area--img">
+                                             <img src="../assets/img/img-icon/icone-usuario.png" alt="Icone Usuário">
+                                        </div>
+                                        <div class="login-area--title">
+                                             <h2>Bem Vindo de Volta!</h2>
+                                        </div>
+                                        <div class="login-area--form">
+                                             <form action="#" method="post">
+                                                  <div class="box-input">
+                                                       <label for="username">Nome de Usuário</label>
+                                                       <input type="email" name="username" id="username" class="input_field" placeholder="Username" />
+                                                  </div>
+                                                  <div class="box-input">
+                                                       <label for="password">Senha</label>
+                                                       <input type="password" name="password" id="password" class="input_field" placeholder="Password" />
+                                                  </div>
+                                                  <div class="box-input org-checkbox">
+                                                       <input type="checkbox" name="remember" id="remember" value="remember">
+                                                       <span>Remember me</span> 
+                                                  </div>
+                                                  <div class="org-submit">
+                                                       <input type="submit" id="btn-enviar" value="Login">
+                                                  </div>
+                                             </form>
+                                             <div class="pag-esqueceuSenha">
+                                                  Forgot password?
+                                             </div>
+                                             <div class="pag-cadastro">
+                                                  Don't have an account?
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="form-modal--cadastro" style="display: none;">
+
+                                   </div>
                               </div>
-                              <div class="login-area--form">
-                                   <form action="#" method="post">
-                                        <input type="email" name="email" placeholder="email" class="input_field" placeholder="Username" />
-                                        <input type="password" name="password" class="input_field" placeholder="Password" />
-                                        <input type="button" class="btn" value="LOGIN">
-                                   </form>
-                                   <a href="cadastro.html">cadastra-se</a>
-                              </div>
-                         </div>
+                         </div>     
                     </div>
                </div>     
           </section>
