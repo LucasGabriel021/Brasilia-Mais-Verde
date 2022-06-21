@@ -449,9 +449,9 @@ html{
 .img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7 {
      flex: 1;
      background-color: #391463;
-     background-size: cover;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
+     background-size: contain;
+     -webkit-background-size: contain;
+     -moz-background-size: contain;
 }
 
 .coluna-2 {
@@ -472,30 +472,37 @@ html{
 
 .img-1 {
      background-color: #391463;
+     background: url(../img/img-mini-galeria-8.jpg) no-repeat center center;
 }
 
 .img-2 {
      background-color: #391463;
+     background: url(../img/img-mini-galeria-10.jpg) no-repeat center center;
 }
 
 .img-3 {
      background-color: #391463;
+     background: url(../img/img-mini-galeria-9.jpg) no-repeat center center;
 }
 
 .img-4 {
      background-color: #391463;
+     background: url(../img/img-mini-galeria-3.jpg) no-repeat center center;
 }
 
 .img-5 {
      background-color: #391463;
+     background: url(../img/img-mini-galeria-6.jpg) no-repeat center center;
 }
 
 .img-6 {
      background-color: #391463;
+     background: url(../img/img-mini-galeria-5.jpg) no-repeat center center;
 }
 
 .img-7 {
      background-color: #391463;
+     background: url(../img/img-mini-galeria-4.jpg) no-repeat center center;
 }
 
 .btn-mini-galeria {
