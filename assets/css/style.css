@@ -12,12 +12,12 @@
      --lima:#A2D729;
      --roxo: #391463;
      --amarelo: #f9d618;
-     --transparencia:  rgba(255, 255, 255, 0.9);
+     --transparencia:  #ffffffe6;
 }
 
 /*CONFIGS GLOBAIS*/
 .container {
-     width: 1600px;
+     width: 1500px;
      height: auto;
 }
 
@@ -49,6 +49,23 @@ html{
      scroll-behavior: smooth;
 }
 
+#btn-scroll {
+     position: fixed;
+     bottom: 0;
+     right: 0;
+     margin-bottom: 40px;
+     margin-right: 20px;
+     z-index: 99;
+     opacity: 0;
+     cursor: pointer;
+}
+
+#btn-scroll img {
+     width: 50px;
+     height: 50px;
+     transform: rotateZ(135deg);
+}
+
 
 /*CONFIGS INDIVIDUAIS*/
 .navbar-header {
@@ -56,10 +73,11 @@ html{
      display: flex;
      justify-content: center;
      align-items: center;
-     background-color: var(--transparencia);
+     background-color: #fff;
      position: fixed;
      top: 0;
      z-index: 99;
+     transition: .5s ease;
 }
 
 #nav {
@@ -431,9 +449,9 @@ html{
 .img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7 {
      flex: 1;
      background-color: #391463;
-     background-size: cover;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
+     background-size: contain;
+     -webkit-background-size: contain;
+     -moz-background-size: contain;
 }
 
 .coluna-2 {
@@ -454,30 +472,37 @@ html{
 
 .img-1 {
      background-color: #391463;
+     background: url(../img/img-mini-galeria-8.jpg) no-repeat center center;
 }
 
 .img-2 {
      background-color: #391463;
+     background: url(../img/img-mini-galeria-10.jpg) no-repeat center center;
 }
 
 .img-3 {
      background-color: #391463;
+     background: url(../img/img-mini-galeria-9.jpg) no-repeat center center;
 }
 
 .img-4 {
      background-color: #391463;
+     background: url(../img/img-mini-galeria-3.jpg) no-repeat center center;
 }
 
 .img-5 {
      background-color: #391463;
+     background: url(../img/img-mini-galeria-6.jpg) no-repeat center center;
 }
 
 .img-6 {
      background-color: #391463;
+     background: url(../img/img-mini-galeria-5.jpg) no-repeat center center;
 }
 
 .img-7 {
      background-color: #391463;
+     background: url(../img/img-mini-galeria-4.jpg) no-repeat center center;
 }
 
 .btn-mini-galeria {
