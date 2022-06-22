@@ -22,9 +22,7 @@
 
 - HTML;
 - CSS;
-- SASS;
 - JS;
-- Bootstrap;
 - Canvas;
 - JQuery
 

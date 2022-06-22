@@ -1,0 +1,233 @@
+#section-local{
+    padding: 60px 0px;
+     display: flex;
+     justify-content: center;
+}
+.section-local--area {
+    width: 80%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.titulo-local h3 {
+    font: 700 36px 'Poppins', sans-serif;
+    color: var(--roxo);
+    padding: 0px 10px 10px 10px;
+}
+
+.titulo-local hr {
+    width: 70%;
+    background-color: var(--roxo);
+    height: 10px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.local{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+
+.accordion {
+    font: normal 18px 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #52aa5e;
+    cursor: pointer;
+    padding: 25px 18px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #391463;
+    border-bottom: none;
+    outline: none;
+    transition: 0.4s;
+}
+.active,.accordion:hover{
+    color: #fff;
+    background-color: #52aa5e;
+}
+
+.panel{
+    padding: 0 18px;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border: 1px solid #391463;
+    border-top: none;
+}
+
+.panel-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: auto;
+    row-gap: 20px;
+}
+
+.panel-grid-1{
+    grid-area: 1 / 1 / 2 / 3;
+}
+.titulo-painel{
+    width: 15%;
+    margin: auto
+}
+.titulo-painel h3 {
+    font: 700 28px 'Poppins', sans-serif;
+    color: var(--roxo);
+    padding: 0px 10px 5px 10px;
+}
+
+.titulo-painel hr {
+    width: 70%;
+    background-color: var(--roxo);
+    height: 7px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+
+.panel-grid-2{
+    grid-area: 2 / 1 / 3 / 2;
+}
+.list{
+    margin: 60px;
+}
+.list p{
+    font: 700 16px 'Poppins', sans-serif;
+    color: var(--roxo);   
+}
+
+.panel-grid-3{
+    grid-area: 2 / 2 / 3 / 3;
+}
+.maps-box {
+    width: 410px; 
+    height: 310px;
+    margin: auto;
+    background-color: var(--verde);
+    border: 5px solid #391463;
+}
+.map{
+    width: 400px; 
+    height: 300px;
+}
+
+.panel-grid-4{
+    grid-area: 3 / 1 / 4 / 3; 
+}
+.line hr{
+    width: 70%;
+    background-color: var(--roxo);
+    height: 7px;
+    border-radius: 5px;
+    margin: auto;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 20px;
+    margin-bottom:30px;
+    margin-left: 75px;
+    }
+    
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.div2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.div3 { 
+    grid-area: 1 / 3 / 2 / 4; 
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.div4 { 
+    grid-area: 1 / 4 / 2 / 5; 
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.div5 { 
+    grid-area: 1 / 5 / 2 / 6; 
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.div6 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.div7 { 
+    grid-area: 2 / 2 / 3 / 3; 
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.div8 { 
+    grid-area: 2 / 3 / 3 / 4; 
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.div9 { 
+    grid-area: 2 / 4 / 3 / 5; 
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.div10 { 
+    grid-area: 2 / 5 / 3 / 6; 
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.div11 { 
+    grid-area: 3 / 1 / 4 / 2; 
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.div12 { 
+    grid-area: 3 / 2 / 4 / 3; 
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.div13 { 
+    grid-area: 3 / 3 / 4 / 4; 
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.div14 { 
+    grid-area: 3 / 4 / 4 / 5; 
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.div15 { 
+    grid-area: 3 / 5 / 4 / 6; 
+    margin-top: 20px;
+    margin-left: 20px;
+}
+    
+.local-button{
+    border: none;
+    background-color: #ffffff;
+}
+.dot{
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 25%;
+    margin-left: 25px;
+    border: 2px solid #391463;
+}
+
+.local-button:active .dot{
+    background-color: green;
+}
