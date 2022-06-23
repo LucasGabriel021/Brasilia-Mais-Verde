@@ -227,7 +227,6 @@
     margin-left: 25px;
     border: 2px solid #391463;
 }
-
-.local-button:active .dot{
-    background-color: green;
+.test{
+    background-color:green;
 }
