@@ -1,131 +1,201 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content="Página inicial do projeto">
-     <meta name="keyswords" content="Hortas, plantas, verde">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página inicial do projeto" />
+    <meta name="keyswords" content="Hortas, plantas, verde" />
 
-     <title>Login</title>
+    <title>Login</title>
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
-     <link rel="stylesheet" href="../assets/css/style.css">
-     <link rel="stylesheet" href="../assets/css/login.css">
-</head>
-<body>
-     <header id="header">
-          <div class="navbar-header">
-               <div class="container">
-                    <nav id="nav">
-                         <div class="logomarca">
-                              <a href="index.html">
-                                   <img src="../assets/img/logo.png" alt="logo">
-                              </a>
-                         </div>
-                         <div class="menu">
-                              <ul>
-                                   <li><a href="#">Galeria</a></li>
-                                   <li><a href="login.html">Login</a></li>
-                                   <li><a href="#">Localização</a></li>
-                                   <li><a href="sobre.html">Sobre</a></li>
-                              </ul>
-                         </div>
-                         <div class="btn-hamburguer">
-                              <span class="line"></span>
-                              <span class="line"></span>
-                              <span class="line"></span>
-                         </div>
-                    </nav>
-               </div>
-          </div>
-     </header>
-     <main class="main">
-          <section id="login">
-               <div class="login-filtro--color">
-                    <div class="container">
-                         <div class="login-area">
-                              <div class="form-modal">
-                                   <div id="form-modal--login">
-                                        <div class="login-area--img">
-                                             <img src="../assets/img/img-icon/icone-usuario.png" alt="Icone Usuário">
-                                        </div>
-                                        <div class="login-area--title">
-                                             <h2>Bem Vindo de Volta!</h2>
-                                        </div>
-                                        <div class="login-area--form">
-                                             <form action="#" method="post">
-                                                  <div class="box-input">
-                                                       <label for="username">Nome de Usuário</label>
-                                                       <input type="email" name="username" id="username" class="input_field" placeholder="Usuário" />
-                                                  </div>
-                                                  <div class="box-input">
-                                                       <label for="password">Senha</label>
-                                                       <input type="password" name="password" id="password" class="input_field" placeholder="Senha" />
-                                                  </div>
-                                                  <div class="box-input org-checkbox">
-                                                       <input type="checkbox" name="remember" id="remember" value="remember">
-                                                       <span>Relembrar</span> 
-                                                  </div>
-                                                  <div class="org-submit">
-                                                       <input type="submit" id="btn-enviar" value="Login">
-                                                  </div>
-                                             </form>
-                                             <div class="pag-esqueceuSenha">
-                                                  Esqueceu sua senha?
-                                             </div>
-                                             <div class="pag-cadastro" onclick="alternarCadastro()">
-                                                  Não tem uma conta?
-                                             </div>
-                                        </div>
-                                   </div>
-                                   <div id="form-modal--cadastro">
-                                        <div class="login-area--title">
-                                             <h2>Cadastro</h2>
-                                        </div>
-                                        <div class="login-area--form">
-                                             <form action="#" method="post">
-                                                  <div class="box-input">
-                                                       <label for="nome">Informe seu nome completo</label>
-                                                       <input type="text" name="nome" id="nome" class="input_field" placeholder="Nome Completo"/>
-                                                  </div>
-                                                  <div class="box-input">
-                                                       <label for="data-nasc">Informe sua data de nascimento</label>
-                                                       <input type = "date" name="data-nasc" id="data-nasc" class="input_field"/>
-                                                  </div>
-                                                  <div class="box-input">
-                                                       <label for="numero-telefone">Informe um número para contato</label>
-                                                       <input type="tel" name="numero-telefone" id="numero-telefone" class="input_field" placeholder="Telefone"/>
-                                                  </div>
-                                                  <div class="box-input">
-                                                       <label for="email">Informe seu e-mail</label>
-                                                       <input type="email" name="email" id="email" class="input_field" placeholder="E-mail"/>
-                                                  </div>
-                                                  <div class="box-input">
-                                                       <label for="password">Senha</label>
-                                                       <input type="password" name="password" id="password" class="input_field" placeholder="Senha" />
-                                                  </div>
-                                                  <div class="box-input org-checkbox">
-                                                       <input type="checkbox" name="receberEmail" id="receberEmail" value="receber">
-                                                       <span>Deseja receber e-mails diários?</span> 
-                                                  </div>
-                                                  <div class="org-submit">
-                                                       <input type="submit" id="btn-enviar" value="Cadastrar">
-                                                  </div>
-                                             </form>
-                                             <div class="pag-login" onclick="alternarLogin()">
-                                                  Tem uma conta?
-                                             </div>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>     
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/login.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="navbar-header">
+        <div class="container">
+          <nav id="nav">
+            <div class="logomarca">
+              <a href="index.html">
+                <img src="../assets/img/logo.png" alt="logo" />
+              </a>
+            </div>
+            <div class="menu">
+              <ul>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="local.html">Localização</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+              </ul>
+            </div>
+            <div class="btn-hamburguer">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section id="login">
+        <div class="login-filtro--color">
+          <div class="container">
+            <div class="login-area">
+              <div class="form-modal">
+                <div id="form-modal--login">
+                  <div class="login-area--img">
+                    <img
+                      src="../assets/img/img-icon/icone-usuario.png"
+                      alt="Icone Usuário"
+                    />
+                  </div>
+                  <div class="login-area--title">
+                    <h2>Bem Vindo de Volta!</h2>
+                  </div>
+                  <div class="login-area--form">
+                    <form action="#" method="post">
+                      <div class="box-input">
+                        <label for="username">Nome de Usuário</label>
+                        <input
+                          type="email"
+                          name="username"
+                          id="username"
+                          class="input_field"
+                          placeholder="Usuário"
+                        />
+                      </div>
+                      <div class="box-input">
+                        <label for="password">Senha</label>
+                        <input
+                          type="password"
+                          name="password"
+                          id="password"
+                          class="input_field"
+                          placeholder="Senha"
+                        />
+                      </div>
+                      <div class="box-input org-checkbox">
+                        <input
+                          type="checkbox"
+                          name="remember"
+                          id="remember"
+                          value="remember"
+                        />
+                        <span>Relembrar</span>
+                      </div>
+                      <div class="org-submit">
+                        <input type="submit" id="btn-enviar" value="Login" />
+                      </div>
+                    </form>
+                    <div class="pag-esqueceuSenha">Esqueceu sua senha?</div>
+                    <div class="pag-cadastro" onclick="alternarCadastro()">
+                      Não tem uma conta?
                     </div>
-               </div>     
-          </section>
-     </main>
-     <script src="./js/login.js"></script>
->>>>>>> 40318b5de39d050b358e7da4d2e9305cca806e93
-</body>
+                  </div>
+                </div>
+                <div id="form-modal--cadastro">
+                  <div class="login-area--title">
+                    <h2>Cadastro</h2>
+                  </div>
+                  <div class="login-area--form">
+                    <form action="#" method="post">
+                      <div class="box-input">
+                        <label for="nome">Informe seu nome completo</label>
+                        <input
+                          type="text"
+                          name="nome"
+                          id="nome"
+                          class="input_field"
+                          placeholder="Nome Completo"
+                        />
+                      </div>
+                      <div class="box-input">
+                        <label for="data-nasc"
+                          >Informe sua data de nascimento</label
+                        >
+                        <input
+                          type="date"
+                          name="data-nasc"
+                          id="data-nasc"
+                          class="input_field"
+                        />
+                      </div>
+                      <div class="box-input">
+                        <label for="numero-telefone"
+                          >Informe um número para contato</label
+                        >
+                        <input
+                          type="tel"
+                          name="numero-telefone"
+                          id="numero-telefone"
+                          class="input_field"
+                          placeholder="Telefone"
+                        />
+                      </div>
+                      <div class="box-input">
+                        <label for="email">Informe seu e-mail</label>
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          class="input_field"
+                          placeholder="E-mail"
+                        />
+                      </div>
+                      <div class="box-input">
+                        <label for="password">Senha</label>
+                        <input
+                          type="password"
+                          name="password"
+                          id="password"
+                          class="input_field"
+                          placeholder="Senha"
+                        />
+                      </div>
+                      <div class="box-input org-checkbox">
+                        <input
+                          type="checkbox"
+                          name="receberEmail"
+                          id="receberEmail"
+                          value="receber"
+                        />
+                        <span>Deseja receber e-mails diários?</span>
+                      </div>
+                      <div class="org-submit">
+                        <input
+                          type="submit"
+                          id="btn-enviar"
+                          value="Cadastrar"
+                        />
+                      </div>
+                    </form>
+                    <div class="pag-login" onclick="alternarLogin()">
+                      Tem uma conta?
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/login.js"></script>
+    >>>>>>> 40318b5de39d050b358e7da4d2e9305cca806e93
+  </body>
 </html>
